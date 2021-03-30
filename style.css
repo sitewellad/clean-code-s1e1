@@ -14,6 +14,7 @@
 
 .header__image {
   width: 100%;
+  display:block;
 }
 
 .header .header__link {
@@ -152,10 +153,16 @@ button{
 }
 
 .list__element > .list__check-label {
-  padding-left: 10px;
+  /* padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
-  width: 226px;
+  width: 226px; */
+  width: 56%;
+    display: inline-block;
+    flex-grow: 1;
+    padding-left: 10px;
+    box-sizing: border-box;
+    font-size: 18px;
 }
 
 .list__element >  .text-input {
@@ -177,7 +184,7 @@ button{
 }
 
 /* Completed */
-.compl-tasks-label {
+.compl-tasks .list__check-label {
   text-decoration: line-through;
   color: #888;
 }
@@ -190,6 +197,17 @@ button{
 .list__element_edit-mode > .list__text-input {
   display: inline-block;
   width: 224px;
+  margin: 0;
+    font-size: 18px;
+    line-height: 18px;
+    height: 21px;
+    padding: 0 9px;
+    border: 1px solid #dDd;
+    background: #FFF;
+    border-radius: 6px;
+    font-family: Lato, sans-serif;
+    color: #888;
+    flex-grow: 1;
 }
 
 .list__element_edit-mode > .list__check-label {
