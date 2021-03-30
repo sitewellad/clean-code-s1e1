@@ -7,47 +7,47 @@
 </head>
 <body class="page">
   <header class="header page__header"> <!--Здесь и далее - BEM позволяет использовать разные БЭМ-сущности на одном DOM-узле - https://ru.bem.info/methodology/quick-start/#%D0%BC%D0%B8%D0%BA%D1%81 -->
-      <img class="header__image" alt="Eisenhower matrix" src="./eisenhower-matrix.jpg">
+      <img class="header__image" alt="Eisenhower matrix" src="./eisenhower-matrix.jpg"> <!--Здесь и далее 4 отступа по правилу 2.5 для разделения длинной строки-->
       <a class="header__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
   </header>
   <main class="main">
     <article class="main__article">
-    <section class="section main-section"><label class="main-section__label" for="new-task">Add Item</label> 
-      <div class="main-section__wrapper"><input class="main-section__input text-input" type="text"><button class="main-section__add-button">Add</button></div>
-    </section>
-    <section class="section">
-    <h3 class="section__title">Todo</h3>
-    <ul class="list incompl-tasks"> 
-      <li class="list__element">
-          <input class="list__check-input" type="checkbox">
-          <label class="list__check-label">Pay Bills</label>
-          <input class="list__text-input" type="text">
-          <button class="list__edit-btn btn">Edit</button>
-          <button class="list__del-btn btn"><img class="list__del-img" alt="remove" src="./remove.svg"></button> <!-- alt необходим, если картинка не отображается, то кнопка без alt полностью не отображается, что нарушает функционал приложения -->
-      </li>
-      <li class="list__element list__element_edit-mode">
-          <input class="list__check-input" type="checkbox">
-          <label class="list__check-label">Go Shopping</label>
-          <input class="list__text-input" type="text" value="Go Shopping">
-          <button class="list__edit-btn btn">Save</button>
-          <button class="list__del-btn btn"><img class="list__del-img" alt="remove" src="./remove.svg"></button>
-      </li>
-      </ul>
-    </section>
-    <section class="section">
-    <h3 class="section__title">Completed</h3>
-    <ul class="list compl-tasks">
-      <li class="list__element">
-          <input class="list__check-input" type="checkbox" checked>
-          <label class="list__check-label">See the Doctor</label>
-          <input class="list__text-input" type="text">
-          <button class="list__edit-btn btn">Edit</button>
-          <button class="list__del-btn btn"><img class="list__del-img" alt="remove" src="./remove.svg"></button>
-      </li>
-    </ul>
-</section>
-</article>
-</main>
-  <script src="app.js"></script>
+      <section class="section main-section"><label class="main-section__label" for="new-task">Add Item</label> 
+        <div class="main-section__wrapper"><input class="main-section__input text-input" type="text"><button class="main-section__add-button">Add</button></div>
+      </section>
+      <section class="section">
+        <h3 class="section__title">Todo</h3>
+        <ul class="list incompl-tasks"> 
+          <li class="list__element">
+              <input class="list__check-input" type="checkbox"> 
+              <label class="list__check-label">Pay Bills</label>
+              <input class="list__text-input" type="text">
+              <button class="list__edit-btn btn">Edit</button>
+              <button class="list__del-btn btn"><img class="list__del-img" alt="remove" src="./remove.svg"></button> <!-- alt необходим, если картинка не отображается, то кнопка без alt полностью не отображается, что нарушает функционал приложения -->
+          </li>
+          <li class="list__element list__element_edit-mode">
+              <input class="list__check-input" type="checkbox">
+              <label class="list__check-label">Go Shopping</label>
+              <input class="list__text-input" type="text" value="Go Shopping">
+              <button class="list__edit-btn btn">Save</button>
+              <button class="list__del-btn btn"><img class="list__del-img" alt="remove" src="./remove.svg"></button>
+          </li>
+        </ul>
+      </section>
+      <section class="section">
+        <h3 class="section__title">Completed</h3>
+        <ul class="list compl-tasks">
+          <li class="list__element">
+              <input class="list__check-input" type="checkbox" checked>
+              <label class="list__check-label">See the Doctor</label>
+              <input class="list__text-input" type="text">
+              <button class="list__edit-btn btn">Edit</button>
+              <button class="list__del-btn btn"><img class="list__del-img" alt="remove" src="./remove.svg"></button>
+          </li>
+        </ul>
+      </section>
+    </article>
+  </main>
+<script src="app.js"></script>
 </body>
 </html>
