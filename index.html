@@ -5,44 +5,44 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="style.css" media="screen">
 </head>
-<body class="whole-page">
-  <header class="matrix-info">
-      <img class="matrix-image" alt="Eisenhower matrix" src="./eisenhower-matrix.jpg">
-      <a class="more-info" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+<body class="page">
+  <header class="header page__header"> <!--Здесь и далее - BEM позволяет использовать разные БЭМ-сущности на одном DOM-узле - https://ru.bem.info/methodology/quick-start/#%D0%BC%D0%B8%D0%BA%D1%81 -->
+      <img class="header__image" alt="Eisenhower matrix" src="./eisenhower-matrix.jpg">
+      <a class="header__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
   </header>
-  <main class="whole-task-element">
-    <article>
-    <section class="main-paragraph" id="topSectionForAddingElementToList"><label class="add-item-label" for="new-task">Add Item</label>
-      <div class="task-row-wrapper"><input id="new-task" class="task text-input" type="text"><button>Add</button></div>
+  <main class="main">
+    <article class="main__article">
+    <section class="section main-section"><label class="main-section__label" for="new-task">Add Item</label> 
+      <div class="main-section__wrapper"><input class="main-section__input text-input" type="text"><button class="main-section__add-button">Add</button></div>
     </section>
-    <section>
-    <h3 class="small-title">Todo</h3>
-    <ul id="incompleteTasks">
-      <li class="list-elem">
-          <input class="check-input" type="checkbox">
-          <label class="task list-elem-label">Pay Bills</label>
-          <input class="text-input text-input-in-list" type="text">
-          <button class="edit btn">Edit</button>
-          <button class="delete btn"><img class="del-img" alt="remove" src="./remove.svg"></button> <!-- alt необходим, если картинка не отображается, то кнопка без alt полностью не отображается, что нарушает функционал приложения -->
+    <section class="section">
+    <h3 class="section__title">Todo</h3>
+    <ul class="list incompl-tasks"> 
+      <li class="list__element">
+          <input class="list__check-input" type="checkbox">
+          <label class="list__check-label">Pay Bills</label>
+          <input class="text-input list__text-input" type="text">
+          <button class="list__edit-btn btn">Edit</button>
+          <button class="list__del-btn btn"><img class="list__del-img" alt="remove" src="./remove.svg"></button> <!-- alt необходим, если картинка не отображается, то кнопка без alt полностью не отображается, что нарушает функционал приложения -->
       </li>
-      <li class="edit-mode list-elem">
-          <input class="check-input" type="checkbox">
-          <label class="task list-elem-label">Go Shopping</label>
-          <input class="text-input text-input-in-list" type="text" value="Go Shopping" class="task">
-          <button class="edit btn">Save</button>
-          <button class="delete btn"><img class="del-img" alt="remove" src="./remove.svg"></button>
+      <li class="list__element list__element_edit-mode">
+          <input class="list__check-input" type="checkbox">
+          <label class="list__check-label">Go Shopping</label>
+          <input class="text-input list__text-input" type="text" value="Go Shopping">
+          <button class="list__edit-btn btn">Save</button>
+          <button class="list__del-btn btn"><img class="list__del-img" alt="remove" src="./remove.svg"></button>
       </li>
       </ul>
     </section>
-    <section>
-    <h3 class="small-title">Completed</h3>
-    <ul id="compl-tasks">
-      <li class="list-elem list-elem">
-          <input class="check-input" type="checkbox" checked>
-          <label class="task list-elem-label compl-tasks-label">See the Doctor</label>
-          <input class="text-input text-input-in-list" type="text" class="task">
-          <button class="edit btn">Edit</button>
-          <button class="delete btn"><img class="del-img" alt="remove" src="./remove.svg"></button>
+    <section class="section">
+    <h3 class="section__title">Completed</h3>
+    <ul class="list compl-tasks">
+      <li class="list__element">
+          <input class="list__check-input" type="checkbox" checked>
+          <label class="list__check-label compl-tasks-label">See the Doctor</label>
+          <input class="text-input list__text-input" type="text">
+          <button class="list__edit-btn btn">Edit</button>
+          <button class="list__del-btn btn"><img class="list__del-img" alt="remove" src="./remove.svg"></button>
       </li>
     </ul>
 </section>
